@@ -1,0 +1,28 @@
+{
+  "name": "encoredigitalgroup/filament-helpers",
+  "description": "",
+  "type": "library",
+  "version": "1.0",
+  "license": "proprietary",
+  "require": {
+    "filament/filament": "^3.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "EncoreDigitalGroup\\FilamentHelpers\\": "src/"
+    }
+  },
+  "minimum-stability": "stable",
+  "extra": {
+    "laravel": {
+      "providers": [
+        "EncoreDigitalGroup\\FilamentHelpers\\Providers\\FilamentHelperServiceProvider"
+      ]
+    }
+  },
+  "require-dev": {
+    "phpstan/phpstan": "^1.11",
+    "rector/rector": "^1.1",
+    "tightenco/duster": "^2.7"
+  }
+}
