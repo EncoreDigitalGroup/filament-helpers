@@ -1,0 +1,17 @@
+#includes:
+#    - phpstan-baseline.neon
+
+parameters:
+    level: 8
+    paths:
+        - src
+    excludePaths:
+        analyseAndScan:
+            - vendor/filament/*
+    reportUnmatchedIgnoredErrors: false
+    checkDynamicProperties: false
+    checkTooWideReturnTypesInProtectedAndPublicMethods: false
+    ignoreErrors:
+        - '#PHPDoc tag .+ #'
+        - identifier: missingType.generics
+        - identifier: missingType.iterableValue
