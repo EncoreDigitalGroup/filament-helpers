@@ -2,6 +2,10 @@ name: PullRequest
 
 on:
     pull_request_target:
+        paths:
+            - '!**/*'
+            - 'src/**/*'
+            - 'composer.json'
 
 permissions:
     contents: write
