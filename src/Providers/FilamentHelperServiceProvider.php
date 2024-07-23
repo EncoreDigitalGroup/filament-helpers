@@ -5,7 +5,7 @@
  * All Right Reserved.
  */
 
-namespace EncoreDigitalGroup\FilamentHelpers\Providers;
+namespace EncoreDigitalGroup\Filament\Helpers\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
