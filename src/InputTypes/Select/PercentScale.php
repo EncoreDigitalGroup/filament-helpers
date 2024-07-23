@@ -5,7 +5,7 @@
  * All Right Reserved.
  */
 
-namespace EncoreDigitalGroup\FilamentHelpers\InputTypes\Select;
+namespace EncoreDigitalGroup\Filament\Helpers\InputTypes\Select;
 
 use Filament\Forms\Components\Select;
 

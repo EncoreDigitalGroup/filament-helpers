@@ -13,6 +13,12 @@ To install the Filament Helpers package, you can use Composer:
 composer require encoredigitalgroup/filament-helpers
 ```
 
+### Upgrading to v2
+
+The only change between v1 and v2 is a slight namespace change. v1 used `EncoreDigitalGroup\FilamentHelpers`. v2 now uses `EncoreDigitalGroup\Filament\Helpers`. This
+change was made to make this package consistent with other packages Encore Digital Group has. A simple find and replace will work for this upgrade as there are no other
+changes, breaking or otherwise, in this release.
+
 ### Usage
 
 ```php

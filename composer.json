@@ -10,14 +10,14 @@
     },
     "autoload": {
         "psr-4": {
-            "EncoreDigitalGroup\\FilamentHelpers\\": "src/"
+            "EncoreDigitalGroup\\Filament\\Helpers\\": "src/"
         }
     },
     "minimum-stability": "stable",
     "extra": {
         "laravel": {
             "providers": [
-                "EncoreDigitalGroup\\FilamentHelpers\\Providers\\FilamentHelperServiceProvider"
+                "EncoreDigitalGroup\\Filament\\Helpers\\Providers\\FilamentHelperServiceProvider"
             ]
         }
     },

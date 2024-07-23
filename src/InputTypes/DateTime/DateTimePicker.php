@@ -5,7 +5,7 @@
  * All Right Reserved.
  */
 
-namespace EncoreDigitalGroup\FilamentHelpers\InputTypes\DateTime;
+namespace EncoreDigitalGroup\Filament\Helpers\InputTypes\DateTime;
 
 use Closure;
 use Filament\Forms;
