@@ -14,15 +14,16 @@ permissions:
 jobs:
     Duster:
         name: Duster
-        uses: EncoreDigitalGroup/.github/.github/workflows/dusterFixBlame.yml@v1
+        uses: EncoreDigitalGroup/ci-workflows/.github/workflows/dusterFixBlame.yml@v1
         permissions:
             contents: write
             pull-requests: write
     StaticAnalysis:
         needs: Duster
         name: StaticAnalysis
-        uses: EncoreDigitalGroup/.github/.github/workflows/larastan.yml@v1
+        uses: EncoreDigitalGroup/ci-workflows/.github/workflows/phpstan.yml@v1
         with:
+            path: 'src/'
             branch: ${{ github.head_ref }}
     # Test:
     #   needs: Duster
@@ -31,4 +32,4 @@ jobs:
     AutoMerge:
         needs: StaticAnalysis
         name: AutoMerge
-        uses: EncoreDigitalGroup/.github/.github/workflows/dependabotAutoMerge.yml@v1
+        uses: EncoreDigitalGroup/ci-workflows/.github/workflows/dependabotAutoMerge.yml@v1
