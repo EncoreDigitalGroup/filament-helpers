@@ -17,7 +17,7 @@ jobs:
     StaticAnalysis:
         needs: Duster
         name: StaticAnalysis
-        uses: EncoreDigitalGroup/ci-workflows/.github/workflows/phpstan.yml@v1
+        uses: EncoreDigitalGroup/ci-workflows/.github/workflows/larastan.yml@v1
         with:
             path: 'src/'
             branch: ${{ github.head_ref }}
