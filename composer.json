@@ -2,7 +2,6 @@
     "name": "encoredigitalgroup/filament-helpers",
     "description": "",
     "type": "library",
-    "version": "1.0",
     "license": "proprietary",
     "require": {
         "encoredigitalgroup/foundation": "^1.3",
