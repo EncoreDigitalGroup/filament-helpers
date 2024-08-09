@@ -11,6 +11,8 @@ jobs:
     GitStatusCheck:
         name: GitStatusCheck
         uses: EncoreDigitalGroup/ci-workflows/.github/workflows/php_gitStatusCheck.yml@v1
+        with:
+            branch: 'v2.x'
 
     FormatTitle:
         name: FormatTitle
