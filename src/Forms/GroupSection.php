@@ -15,7 +15,7 @@ class GroupSection
             ->schema([
                 Section::make()
                     ->schema($schema)
-                    ->columns($innerColumns)
+                    ->columns($innerColumns),
             ])
             ->columns($outerColumns);
     }
