@@ -1,6 +1,6 @@
 <?php
 
-namespace EncoreDigitalGroup\FilamentHelpers\Forms;
+namespace EncoreDigitalGroup\Filament\Helpers\Forms;
 
 use Filament\Forms\Components\Component;
 use Filament\Forms\Components\Group;
