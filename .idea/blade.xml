@@ -3,12 +3,15 @@
   <component name="BladeInjectionConfiguration" default="false">
     <directives>
       <data directive="@append" />
+      <data directive="@assets" />
       <data directive="@auth" injection="true" prefix="&lt;?php&#10;if(auth()-&gt;guard(" suffix=")-&gt;check()): ?&gt;" />
       <data directive="@aware" injection="true" prefix="&lt;?php $attributes = $attributes-&gt;exceptProps(" suffix="); ?&gt;" />
       <data directive="@break" injection="true" prefix="&lt;?php&#10;if(" suffix=") break; ?&gt;" />
       <data directive="@can" injection="true" prefix="&lt;?php&#10;if (app(\Illuminate\Contracts\Auth\Access\Gate::class)-&gt;check(" suffix=")): ?&gt;" />
       <data directive="@canany" injection="true" prefix="&lt;?php&#10;if (app(\Illuminate\Contracts\Auth\Access\Gate::class)-&gt;any(" suffix=")): ?&gt;" />
       <data directive="@cannot" injection="true" prefix="&lt;?php&#10;if (app(\Illuminate\Contracts\Auth\Access\Gate::class)-&gt;denies(" suffix=")): ?&gt;" />
+      <data directive="@capture" injection="true" prefix="&lt;?php _bladeDirective(" suffix="); ?&gt;" />
+      <data directive="@captureSlots" injection="true" prefix="&lt;?php _bladeDirective(" suffix="); ?&gt;" />
       <data directive="@case" injection="true" prefix="&lt;?php&#10;case (" suffix="): ?&gt;" />
       <data directive="@checked" injection="true" prefix="&lt;?php if(" suffix=") {echo 'checked';}?&gt;" />
       <data directive="@choice" injection="true" prefix="&lt;?php&#10;echo app('translator')-&gt;choice(" suffix="); ?&gt;" />
@@ -30,10 +33,12 @@
       <data directive="@elseguest" injection="true" prefix="&lt;?php&#10;elseif(auth()-&gt;guard(" suffix=")-&gt;guest()): ?&gt;" />
       <data directive="@elseif" injection="true" prefix="&lt;?php&#10;elseif(" suffix="): ?&gt;" />
       <data directive="@empty" injection="true" prefix="&lt;?php&#10;if(empty(" suffix=")): ?&gt;" />
+      <data directive="@endassets" />
       <data directive="@endauth" />
       <data directive="@endcan" />
       <data directive="@endcanany" />
       <data directive="@endcannot" />
+      <data directive="@endcapture" />
       <data directive="@endcomponent" />
       <data directive="@endcomponentClass" />
       <data directive="@endcomponentfirst" />
@@ -57,6 +62,7 @@
       <data directive="@endpush" />
       <data directive="@endpushif" />
       <data directive="@endpushonce" />
+      <data directive="@endscript" />
       <data directive="@endsection" />
       <data directive="@endsession" />
       <data directive="@endslot" />
@@ -70,6 +76,8 @@
       <data directive="@error" injection="true" prefix="&lt;?php&#10;$__errorArgs = [" suffix="];&#10;$__bag = $errors-&gt;getBag($__errorArgs[1] ?? 'default');&#10;if ($__bag-&gt;has($__errorArgs[0])) :&#10;if (isset($message)) { $__messageOriginal = $message; }&#10;$message = $__bag-&gt;first($__errorArgs[0]); ?&gt;" />
       <data directive="@extends" injection="true" prefix="&lt;?php&#10;echo $__env-&gt;make(" suffix=", \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))-&gt;render(); ?&gt;" />
       <data directive="@extendsfirst" injection="true" prefix="&lt;?php&#10;echo $__env-&gt;first(" suffix=", \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))-&gt;render(); ?&gt;" />
+      <data directive="@filamentScripts" injection="true" prefix="&lt;?php _bladeDirective(" suffix="); ?&gt;" />
+      <data directive="@filamentStyles" injection="true" prefix="&lt;?php _bladeDirective(" suffix="); ?&gt;" />
       <data directive="@for" injection="true" prefix="&lt;?php&#10;for(" suffix="): ?&gt;" />
       <data directive="@foreach" injection="true" prefix="&lt;?php&#10;foreach(" suffix="): ?&gt;" />
       <data directive="@forelse" injection="true" prefix="&lt;?php&#10;foreach(" suffix="): ?&gt;" />
@@ -104,6 +112,7 @@
       <data directive="@pushonce" injection="true" prefix="&lt;?php&#10;$__php_storm_push_once_params = [" suffix="]; if (!$__env-&gt;hasRenderedOnce($__php_storm_push_once_params[1])): $__env-&gt;markAsRenderedOnce($__php_storm_push_once_params[1]); $__env-&gt;startPush($__php_storm_push_once_params[0]); ?&gt;" />
       <data directive="@readonly" injection="true" prefix="&lt;?php&#10;if(" suffix="): echo 'readonly'; endif; ?&gt;" />
       <data directive="@required" injection="true" prefix="&lt;?php&#10;if(" suffix="): echo 'required'; endif; ?&gt;" />
+      <data directive="@script" />
       <data directive="@section" injection="true" prefix="&lt;?php&#10;$__env-&gt;startSection(" suffix="); ?&gt;" />
       <data directive="@sectionMissing" injection="true" prefix="&lt;?php&#10;if (empty(trim($__env-&gt;yieldContent(" suffix=")))): ?&gt;" />
       <data directive="@selected" injection="true" prefix="&lt;?php if(" suffix=") {echo 'selected';}?&gt;" />
