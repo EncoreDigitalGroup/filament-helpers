@@ -9,7 +9,7 @@ use Filament\Forms\Components\Section;
 /** @experimental */
 class GroupSection
 {
-    public static function make(array $schema, int $outerColumns = 2, int $innerColumns = 1, int $outerColumnSpan = 2, int $innerColumnSpan = 1): Component
+    public static function make(array $schema, int $outerColumns = 2, int $innerColumns = 2, int $outerColumnSpan = 2, int $innerColumnSpan = 2): Component
     {
         if ($innerColumns > $outerColumns) {
             $innerColumns = $outerColumns;
