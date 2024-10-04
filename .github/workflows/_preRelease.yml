@@ -11,8 +11,8 @@ jobs:
     name: CreatePreRelease
     uses: EncoreDigitalGroup/.github/.github/workflows/createRelease.yml@v1
     with:
-      generate_release_notes: true
-      is_draft: false
-      pre_release: true
+      generageReleaseNotes: true
+      isDraft: false
+      preRelease: true
     secrets:
       token: ${{ secrets.GITHUB_TOKEN }}
