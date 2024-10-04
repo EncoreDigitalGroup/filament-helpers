@@ -4,8 +4,7 @@
     "type": "library",
     "license": "proprietary",
     "require": {
-        "encoredigitalgroup/foundation": "^1.3",
-        "filament/filament": "^3.2"
+        "filament/filament": "^3.2.115"
     },
     "autoload": {
         "psr-4": {
