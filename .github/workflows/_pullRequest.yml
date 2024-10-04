@@ -2,22 +2,37 @@ name: PullRequest
 
 on:
     pull_request_target:
-        paths:
-            - '!**/*'
-            - 'src/**/*'
-            - 'composer.json'
 
 permissions:
     contents: write
     pull-requests: write
 
 jobs:
+    GitStatusCheck:
+        name: GitStatusCheck
+        uses: EncoreDigitalGroup/ci-workflows/.github/workflows/php_gitStatusCheck.yml@v1
+        with:
+            branch: 'v2.x'
+
+    FormatTitle:
+        name: FormatTitle
+        uses: EncoreDigitalGroup/ci-workflows/.github/workflows/formatPullRequestTitle.yml@v1
+        with:
+            branch: ${{ github.head_ref }}
+            pullRequestNumber: ${{ github.event.number }}
+            repository: ${{ github.repository }}
+        secrets:
+            token: ${{ secrets.GITHUB_TOKEN }}
+
     Duster:
         name: Duster
+        needs: GitStatusCheck
+        if: needs.GitStatusCheck.outputs.shouldRun == 'true'
         uses: EncoreDigitalGroup/ci-workflows/.github/workflows/dusterFixBlame.yml@v1
         permissions:
             contents: write
             pull-requests: write
+
     StaticAnalysis:
         needs: Duster
         name: StaticAnalysis
@@ -25,10 +40,7 @@ jobs:
         with:
             path: 'src/'
             branch: ${{ github.head_ref }}
-    # Test:
-    #   needs: Duster
-    #   name: Run Tests
-    #   uses: EncoreDigitalGroup/.github/.github/workflows/pest.yml@master
+
     AutoMerge:
         needs: StaticAnalysis
         name: AutoMerge

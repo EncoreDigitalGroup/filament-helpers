@@ -2,7 +2,6 @@
     "name": "encoredigitalgroup/filament-helpers",
     "description": "",
     "type": "library",
-    "version": "1.0",
     "license": "proprietary",
     "require": {
         "encoredigitalgroup/foundation": "^1.3",
@@ -10,14 +9,14 @@
     },
     "autoload": {
         "psr-4": {
-            "EncoreDigitalGroup\\FilamentHelpers\\": "src/"
+            "EncoreDigitalGroup\\Filament\\Helpers\\": "src/"
         }
     },
     "minimum-stability": "stable",
     "extra": {
         "laravel": {
             "providers": [
-                "EncoreDigitalGroup\\FilamentHelpers\\Providers\\FilamentHelperServiceProvider"
+                "EncoreDigitalGroup\\Filament\\Helpers\\Providers\\FilamentHelperServiceProvider"
             ]
         }
     },

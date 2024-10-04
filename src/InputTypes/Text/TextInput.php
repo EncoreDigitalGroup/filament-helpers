@@ -5,7 +5,7 @@
  * All Right Reserved.
  */
 
-namespace EncoreDigitalGroup\FilamentHelpers\InputTypes\Text;
+namespace EncoreDigitalGroup\Filament\Helpers\InputTypes\Text;
 
 use Filament\Forms\Components\TextInput as TextInputBase;
 
