@@ -19,7 +19,6 @@ class DateTimePicker
             ->columnSpan(2)
             ->seconds(false)
             ->weekStartsOnSunday()
-            ->displayFormat('m/d/Y h:i A')
-            ->minDate(now()->startOfDay());
+            ->displayFormat('m/d/Y h:i A');
     }
 }
