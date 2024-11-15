@@ -2,7 +2,6 @@
 
 namespace EncoreDigitalGroup\Filament\Helpers\Forms;
 
-
 use Filament\Forms\Form;
 use Filament\Resources\Pages\Page;
 use Illuminate\Database\Eloquent\Model;
