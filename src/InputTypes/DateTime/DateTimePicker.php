@@ -21,6 +21,6 @@ class DateTimePicker
             ->seconds(false)
             ->weekStartsOnSunday()
             ->displayFormat('m/d/Y h:i A')
-            ->extraAttributes(["class" => InputMasking::get()], true);
+            ->extraAttributes(['class' => InputMasking::get()], true);
     }
 }

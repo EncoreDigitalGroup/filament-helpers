@@ -43,6 +43,6 @@ class PercentScale
             ])
             ->label($label)
             ->native(false)
-            ->extraAttributes(["class" => InputMasking::get()], true);
+            ->extraAttributes(['class' => InputMasking::get()], true);
     }
 }

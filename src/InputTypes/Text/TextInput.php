@@ -18,6 +18,6 @@ class TextInput
             ->label($label)
             ->validationAttribute($label)
             ->columnSpanFull()
-            ->extraAttributes(["class" => InputMasking::get()], true);
+            ->extraAttributes(['class' => InputMasking::get()], true);
     }
 }
