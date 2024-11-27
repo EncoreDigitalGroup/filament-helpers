@@ -7,6 +7,7 @@
 
 namespace EncoreDigitalGroup\Filament\Helpers\InputTypes\Select;
 
+use EncoreDigitalGroup\Filament\Helpers\Support\InputMasking;
 use Filament\Forms\Components\Select;
 
 /**
@@ -41,6 +42,7 @@ class PercentScale
                 '1.00' => '100%',
             ])
             ->label($label)
-            ->native(false);
+            ->native(false)
+            ->extraAttributes(['class' => InputMasking::get()], true);
     }
 }

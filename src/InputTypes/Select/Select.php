@@ -8,6 +8,7 @@
 namespace EncoreDigitalGroup\Filament\Helpers\InputTypes\Select;
 
 use Closure;
+use EncoreDigitalGroup\Filament\Helpers\Support\InputMasking;
 use Filament\Forms\Components\Select as BaseSelect;
 use Illuminate\Contracts\Support\Htmlable;
 
@@ -17,6 +18,7 @@ class Select
     {
         return BaseSelect::make($fieldName)
             ->label($label)
-            ->native(false);
+            ->native(false)
+            ->extraAttributes(['class' => InputMasking::get()], true);
     }
 }

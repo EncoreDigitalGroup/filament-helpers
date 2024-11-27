@@ -7,6 +7,7 @@
 
 namespace EncoreDigitalGroup\Filament\Helpers\InputTypes\Select;
 
+use EncoreDigitalGroup\Filament\Helpers\Support\InputMasking;
 use Filament\Forms\Components\Select;
 
 /**
@@ -25,6 +26,7 @@ class NumericScale
                 '5' => '5',
             ])
             ->label($label)
-            ->native(false);
+            ->native(false)
+            ->extraAttributes(['class' => InputMasking::get()], true);
     }
 }
