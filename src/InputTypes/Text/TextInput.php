@@ -7,6 +7,7 @@
 
 namespace EncoreDigitalGroup\Filament\Helpers\InputTypes\Text;
 
+use EncoreDigitalGroup\Filament\Helpers\Support\InputMasking;
 use Filament\Forms\Components\TextInput as TextInputBase;
 
 class TextInput
@@ -16,6 +17,7 @@ class TextInput
         return TextInputBase::make($field)
             ->label($label)
             ->validationAttribute($label)
-            ->columnSpanFull();
+            ->columnSpanFull()
+            ->extraAttributes(["class" => InputMasking::get()], true);
     }
 }

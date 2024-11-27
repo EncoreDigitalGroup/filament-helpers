@@ -7,6 +7,7 @@
 
 namespace EncoreDigitalGroup\Filament\Helpers\InputTypes\Select;
 
+use EncoreDigitalGroup\Filament\Helpers\Support\InputMasking;
 use Filament\Forms\Components\Select;
 
 /**
@@ -44,6 +45,7 @@ class HourSelector
                 '11PM' => '11PM',
             ])
             ->label($label)
-            ->native(false);
+            ->native(false)
+            ->extraAttributes(["class" => InputMasking::get()], true);
     }
 }

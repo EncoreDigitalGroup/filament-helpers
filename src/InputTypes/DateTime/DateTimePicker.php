@@ -8,6 +8,7 @@
 namespace EncoreDigitalGroup\Filament\Helpers\InputTypes\DateTime;
 
 use Closure;
+use EncoreDigitalGroup\Filament\Helpers\Support\InputMasking;
 use Filament\Forms;
 
 class DateTimePicker
@@ -19,6 +20,7 @@ class DateTimePicker
             ->columnSpan(2)
             ->seconds(false)
             ->weekStartsOnSunday()
-            ->displayFormat('m/d/Y h:i A');
+            ->displayFormat('m/d/Y h:i A')
+            ->extraAttributes(["class" => InputMasking::get()], true);
     }
 }
