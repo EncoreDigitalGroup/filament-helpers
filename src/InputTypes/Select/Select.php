@@ -19,6 +19,6 @@ class Select
         return BaseSelect::make($fieldName)
             ->label($label)
             ->native(false)
-            ->extraAttributes(["class" => InputMasking::get()], true);
+            ->extraAttributes(['class' => InputMasking::get()], true);
     }
 }

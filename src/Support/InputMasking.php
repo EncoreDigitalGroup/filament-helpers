@@ -4,9 +4,9 @@ namespace EncoreDigitalGroup\Filament\Helpers\Support;
 
 class InputMasking
 {
-    protected static string $mask = "";
+    protected static string $mask = '';
 
-    public static function set(string $mask = ""): void
+    public static function set(string $mask = ''): void
     {
         static::$mask = $mask;
     }
