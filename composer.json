@@ -11,6 +11,11 @@
             "EncoreDigitalGroup\\Filament\\Helpers\\": "src/"
         }
     },
+    "scripts": {
+        "post-autoload-dump": [
+            "PHPGenesis\\Common\\Composer\\Scripts::postAutoloadDump"
+        ]
+    },
     "minimum-stability": "stable",
     "extra": {
         "laravel": {
@@ -22,6 +27,7 @@
     "require-dev": {
         "phpstan/phpstan": "^1.11",
         "rector/rector": "^1.1",
-        "tightenco/duster": "^2.7 || ^3.0"
+        "tightenco/duster": "^2.7 || ^3.0",
+        "phpgenesis/devutilities": "^0.2.57"
     }
 }
