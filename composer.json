@@ -11,6 +11,11 @@
             "EncoreDigitalGroup\\Filament\\Helpers\\": "src/"
         }
     },
+    "scripts": {
+        "post-autoload-dump": [
+            "PHPGenesis\\Common\\Composer\\Scripts::postAutoloadDump"
+        ]
+    },
     "minimum-stability": "stable",
     "extra": {
         "laravel": {
