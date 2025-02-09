@@ -1,18 +1,18 @@
 name: PreRelease
 
 on:
-  push:
-    tags:
-      - 'v[0-9]+.[0-9]+.[0-9]+-rc[0-9]+'
-      - '!v[0-9]+.[0-9]+.[0-9]+'
+    push:
+        tags:
+            - 'v[0-9]+.[0-9]+.[0-9]+-rc[0-9]+'
+            - '!v[0-9]+.[0-9]+.[0-9]+'
 
 jobs:
-  CreatePreRelease:
-    name: CreatePreRelease
-    uses: EncoreDigitalGroup/.github/.github/workflows/createRelease.yml@v1
-    with:
-      generageReleaseNotes: true
-      isDraft: false
-      preRelease: true
-    secrets:
-      token: ${{ secrets.GITHUB_TOKEN }}
+    CreatePreRelease:
+        name: CreatePreRelease
+        uses: EncoreDigitalGroup/ci-workflows/.github/workflows/github_createRelease.yml@v2
+        with:
+            generateReleaseNotes: true
+            isDraft: false
+            preRelease: true
+        secrets:
+            token: ${{ secrets.GITHUB_TOKEN }}
