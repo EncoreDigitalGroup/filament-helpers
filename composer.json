@@ -2,7 +2,7 @@
     "name": "encoredigitalgroup/filament-helpers",
     "description": "",
     "type": "library",
-    "license": "proprietary",
+    "license": "BSD-3-Clause",
     "require": {
         "filament/filament": "^3.2.115"
     },
