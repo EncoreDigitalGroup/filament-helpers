@@ -13,7 +13,7 @@ class MoneyInput
             ->numeric()
             ->prefix("$")
             ->step(0.01)
-            ->formatStateUsing(fn($state) => $state ? number_format($state / 100, 2, '.', '') : "0.00")
-            ->dehydrateStateUsing(fn($state) => $state ? $state * 100 : 0);
+            ->formatStateUsing(fn($state): string => $state ? number_format($state / 100, 2, ".", "") : "0.00")
+            ->dehydrateStateUsing(fn($state): int|float => $state ? $state * 100 : 0);
     }
 }
