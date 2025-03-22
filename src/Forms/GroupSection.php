@@ -46,9 +46,13 @@ class GroupSection
         return $groupSection->render();
     }
 
-    public function schema(array $schema): self
+    public function schema(array $schema, bool $render = false): self|Component
     {
         $this->schema = $schema;
+
+        if ($render) {
+            return $this->render();
+        }
 
         return $this;
     }
@@ -58,14 +62,29 @@ class GroupSection
         return $this->schema;
     }
 
+    public function outerColumns(int $outerColumns, bool $render = false): self|Component
+    {
+        $this->outerColumns = $outerColumns;
+
+        if ($render) {
+            return $this->render();
+        }
+
+        return $this;
+    }
+
     public function getOuterColumns(): int
     {
         return $this->outerColumns;
     }
 
-    public function outerColumns(int $outerColumns): self
+    public function innerColumns(int $innerColumns, bool $render = false): self|Component
     {
-        $this->outerColumns = $outerColumns;
+        $this->innerColumns = $innerColumns;
+
+        if ($render) {
+            return $this->render();
+        }
 
         return $this;
     }
@@ -75,9 +94,13 @@ class GroupSection
         return $this->innerColumns;
     }
 
-    public function innerColumns(int $innerColumns): self
+    public function outerColumnSpan(int $outerColumnSpan, bool $render = false): self|Component
     {
-        $this->innerColumns = $innerColumns;
+        $this->outerColumnSpan = $outerColumnSpan;
+
+        if ($render) {
+            return $this->render();
+        }
 
         return $this;
     }
@@ -87,9 +110,13 @@ class GroupSection
         return $this->outerColumnSpan;
     }
 
-    public function outerColumnSpan(int $outerColumnSpan): self
+    public function innerColumnSpan(int $innerColumnSpan, bool $render = false): self|Component
     {
-        $this->outerColumnSpan = $outerColumnSpan;
+        $this->innerColumnSpan = $innerColumnSpan;
+
+        if ($render) {
+            return $this->render();
+        }
 
         return $this;
     }
@@ -99,16 +126,13 @@ class GroupSection
         return $this->innerColumnSpan;
     }
 
-    public function innerColumnSpan(int $innerColumnSpan): self
-    {
-        $this->innerColumnSpan = $innerColumnSpan;
-
-        return $this;
-    }
-
-    public function collapsible(bool $collapsible = true): self
+    public function collapsible(bool $collapsible = true, bool $render = false): self|Component
     {
         $this->collapsable = $collapsible;
+
+        if ($render) {
+            return $this->render();
+        }
 
         return $this;
     }
@@ -118,9 +142,13 @@ class GroupSection
         return $this->collapsable;
     }
 
-    public function sectionHeading(string $sectionHeading = ""): self
+    public function sectionHeading(string $sectionHeading = "", bool $render = false): self|Component
     {
         $this->sectionHeading = $sectionHeading;
+
+        if ($render) {
+            return $this->render();
+        }
 
         return $this;
     }
@@ -130,9 +158,13 @@ class GroupSection
         return $this->sectionHeading;
     }
 
-    public function defaultCollapsed(bool $collapsed = true): self
+    public function defaultCollapsed(bool $collapsed = true, bool $render = false): self|Component
     {
         $this->defaultCollapsed = $collapsed;
+
+        if ($render) {
+            return $this->render();
+        }
 
         return $this;
     }
