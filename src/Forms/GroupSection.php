@@ -18,6 +18,11 @@ class GroupSection
     private bool $defaultCollapsed = false;
     private string $sectionHeading = "";
 
+    private function __construct(array $schema)
+    {
+        $this->schema($schema);
+    }
+
     public static function make(array $schema, int $outerColumns = 2, int $innerColumns = 2, int $outerColumnSpan = 2, int $innerColumnSpan = 2, bool $fluent = false): self|Component
     {
         $groupSection = new self($schema);
@@ -41,14 +46,10 @@ class GroupSection
         return $groupSection->render();
     }
 
-    private function __construct(array $schema)
-    {
-        $this->schema($schema);
-    }
-
     public function schema(array $schema): self
     {
         $this->schema = $schema;
+
         return $this;
     }
 
@@ -65,6 +66,7 @@ class GroupSection
     public function outerColumns(int $outerColumns): self
     {
         $this->outerColumns = $outerColumns;
+
         return $this;
     }
 
@@ -76,6 +78,7 @@ class GroupSection
     public function innerColumns(int $innerColumns): self
     {
         $this->innerColumns = $innerColumns;
+
         return $this;
     }
 
@@ -87,6 +90,7 @@ class GroupSection
     public function outerColumnSpan(int $outerColumnSpan): self
     {
         $this->outerColumnSpan = $outerColumnSpan;
+
         return $this;
     }
 
@@ -98,12 +102,14 @@ class GroupSection
     public function innerColumnSpan(int $innerColumnSpan): self
     {
         $this->innerColumnSpan = $innerColumnSpan;
+
         return $this;
     }
 
     public function collapsible(bool $collapsible = true): self
     {
         $this->collapsable = $collapsible;
+
         return $this;
     }
 
@@ -115,6 +121,7 @@ class GroupSection
     public function sectionHeading(string $sectionHeading = ""): self
     {
         $this->sectionHeading = $sectionHeading;
+
         return $this;
     }
 
@@ -126,6 +133,7 @@ class GroupSection
     public function defaultCollapsed(bool $collapsed = true): self
     {
         $this->defaultCollapsed = $collapsed;
+
         return $this;
     }
 
