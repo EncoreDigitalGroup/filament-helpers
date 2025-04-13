@@ -1,4 +1,8 @@
 <?php
+/*
+ * Copyright (c) 2025. Encore Digital Group.
+ * All Rights Reserved.
+ */
 
 namespace EncoreDigitalGroup\Filament\Helpers\Forms;
 
@@ -27,45 +31,14 @@ class GroupSection
         return new self($schema);
     }
 
-    /**
-     * @param  array  $schema  Form schema.
-     * @param  int  $outerColumns  Deprecated, use GroupSection::fluent() instead.
-     * @param  int  $innerColumns  Deprecated, use GroupSection::fluent() instead.
-     * @param  int  $outerColumnSpan  Deprecated, use GroupSection::fluent() instead.
-     * @param  int  $innerColumnSpan  Deprecated, use GroupSection::fluent() instead.
-     * @param  bool  $fluent  Deprecated, use GroupSection::fluent() instead.
-     */
-    public static function make(array $schema, int $outerColumns = 2, int $innerColumns = 2, int $outerColumnSpan = 2, int $innerColumnSpan = 2, bool $fluent = false): self|Component
+    public static function make(array $schema): Component
     {
-        $groupSection = self::fluent($schema);
-
-        if ($innerColumns > $outerColumns) {
-            $groupSection->innerColumns($outerColumns);
-        }
-
-        if ($outerColumnSpan > $outerColumns) {
-            $groupSection->outerColumnSpan($outerColumns);
-        }
-
-        if ($innerColumnSpan > $innerColumns) {
-            $groupSection->innerColumnSpan($innerColumns);
-        }
-
-        if ($fluent) {
-            return $groupSection;
-        }
-
-        return $groupSection->render();
+        return self::fluent($schema)->render();
     }
 
-    /** @param bool $render Deprecated. */
-    public function schema(array $schema, bool $render = false): self|Component
+    public function schema(array $schema): self
     {
         $this->schema = $schema;
-
-        if ($render) {
-            return $this->render();
-        }
 
         return $this;
     }
@@ -75,14 +48,9 @@ class GroupSection
         return $this->schema;
     }
 
-    /** @param bool $render Deprecated. */
-    public function outerColumns(int $outerColumns, bool $render = false): self|Component
+    public function outerColumns(int $outerColumns): self
     {
         $this->outerColumns = $outerColumns;
-
-        if ($render) {
-            return $this->render();
-        }
 
         return $this;
     }
@@ -92,14 +60,9 @@ class GroupSection
         return $this->outerColumns;
     }
 
-    /** @param bool $render Deprecated. */
-    public function innerColumns(int $innerColumns, bool $render = false): self|Component
+    public function innerColumns(int $innerColumns): self
     {
         $this->innerColumns = $innerColumns;
-
-        if ($render) {
-            return $this->render();
-        }
 
         return $this;
     }
@@ -109,14 +72,9 @@ class GroupSection
         return $this->innerColumns;
     }
 
-    /** @param bool $render Deprecated. */
-    public function outerColumnSpan(int $outerColumnSpan, bool $render = false): self|Component
+    public function outerColumnSpan(int $outerColumnSpan): self
     {
         $this->outerColumnSpan = $outerColumnSpan;
-
-        if ($render) {
-            return $this->render();
-        }
 
         return $this;
     }
@@ -126,14 +84,9 @@ class GroupSection
         return $this->outerColumnSpan;
     }
 
-    /** @param bool $render Deprecated. */
-    public function innerColumnSpan(int $innerColumnSpan, bool $render = false): self|Component
+    public function innerColumnSpan(int $innerColumnSpan): self
     {
         $this->innerColumnSpan = $innerColumnSpan;
-
-        if ($render) {
-            return $this->render();
-        }
 
         return $this;
     }
@@ -143,14 +96,9 @@ class GroupSection
         return $this->innerColumnSpan;
     }
 
-    /** @param bool $render Deprecated. */
-    public function collapsible(bool $collapsible = true, bool $render = false): self|Component
+    public function collapsible(bool $collapsible = true): self
     {
         $this->collapsable = $collapsible;
-
-        if ($render) {
-            return $this->render();
-        }
 
         return $this;
     }
@@ -160,14 +108,9 @@ class GroupSection
         return $this->collapsable;
     }
 
-    /** @param bool $render Deprecated. */
-    public function sectionHeading(string $sectionHeading = "", bool $render = false): self|Component
+    public function sectionHeading(string $sectionHeading = ""): self
     {
         $this->sectionHeading = $sectionHeading;
-
-        if ($render) {
-            return $this->render();
-        }
 
         return $this;
     }
@@ -177,14 +120,9 @@ class GroupSection
         return $this->sectionHeading;
     }
 
-    /** @param bool $render Deprecated. */
-    public function defaultCollapsed(bool $collapsed = true, bool $render = false): self|Component
+    public function defaultCollapsed(bool $collapsed = true): self
     {
         $this->defaultCollapsed = $collapsed;
-
-        if ($render) {
-            return $this->render();
-        }
 
         return $this;
     }
