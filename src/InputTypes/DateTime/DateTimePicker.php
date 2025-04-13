@@ -9,13 +9,13 @@ namespace EncoreDigitalGroup\Filament\Helpers\InputTypes\DateTime;
 
 use Closure;
 use EncoreDigitalGroup\Filament\Helpers\Support\InputMasking;
-use Filament\Forms;
+use Filament\Forms\Components\DateTimePicker as BaseDateTimePicker;
 
 class DateTimePicker
 {
-    public static function make(string $field, bool|Closure $required = true): Forms\Components\DateTimePicker
+    public static function make(string $field, bool|Closure $required = true): BaseDateTimePicker
     {
-        return Forms\Components\DateTimePicker::make($field)
+        return BaseDateTimePicker::make($field)
             ->required($required)
             ->columnSpan(2)
             ->seconds(false)
