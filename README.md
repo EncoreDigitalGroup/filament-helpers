@@ -19,6 +19,22 @@ The only change between v1 and v2 is a slight namespace change. v1 used `EncoreD
 change was made to make this package consistent with other packages Encore Digital Group has. A simple find and replace will work for this upgrade as there are no other
 changes, breaking or otherwise, in this release.
 
+### Upgrading to v3
+
+The `EncoreDigitalGroup\Filament\Helpers\Forms\GroupSection` class had the following modifications:
+
+- The `make()` method now only has one parameter: `$schema`. No changes are required for use of this parameter.
+    - The `$render` parameter has been removed. Use of `make($schema)` automatically renders the component.
+    - The `$fluent` parameter has been removed. Use `GroupSection::fluent($schema)` instead.
+    - The `$innerColumns` parameter has been removed. Use `GroupSection::fluent($schema)->innerColumns($int)` instead.
+    - The `$outerColumns` parameter has been removed. Use `GroupSection::fluent($schema)->outerColumns($int) `instead.
+    - The `$innerColumnSpan` parameter has been removed. Use `GroupSection::fluent($schema)->innerColumnSpan($int)` instead.
+    - The `$outerColumnSpan` parameter has been removed. Use `GroupSection::fluent($schema)->outerColumnSpan($int)` instead.
+
+- The `fluent()` method has been added:
+    - As the name suggests, this method does not automatically render the component. You can make your adjustments using the
+      provided methods. Once you are finished making adjustments, you can call `render()` to render the component.
+
 ### Usage
 
 ```php
