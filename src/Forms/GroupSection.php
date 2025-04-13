@@ -6,7 +6,6 @@ use Filament\Forms\Components\Component;
 use Filament\Forms\Components\Group;
 use Filament\Forms\Components\Section;
 
-/** @experimental */
 class GroupSection
 {
     private array $schema = [];
@@ -23,9 +22,22 @@ class GroupSection
         $this->schema($schema);
     }
 
+    public static function fluent(array $schema): self
+    {
+        return new self($schema);
+    }
+
+    /**
+     * @param array $schema Form schema.
+     * @param int $outerColumns Deprecated, use GroupSection::fluent() instead.
+     * @param int $innerColumns Deprecated, use GroupSection::fluent() instead.
+     * @param int $outerColumnSpan Deprecated, use GroupSection::fluent() instead.
+     * @param int $innerColumnSpan Deprecated, use GroupSection::fluent() instead.
+     * @param bool $fluent Deprecated, use GroupSection::fluent() instead.
+     */
     public static function make(array $schema, int $outerColumns = 2, int $innerColumns = 2, int $outerColumnSpan = 2, int $innerColumnSpan = 2, bool $fluent = false): self|Component
     {
-        $groupSection = new self($schema);
+        $groupSection = self::fluent($schema);
 
         if ($innerColumns > $outerColumns) {
             $groupSection->innerColumns($outerColumns);
@@ -46,6 +58,7 @@ class GroupSection
         return $groupSection->render();
     }
 
+    /** @param bool $render Deprecated. */
     public function schema(array $schema, bool $render = false): self|Component
     {
         $this->schema = $schema;
@@ -62,6 +75,7 @@ class GroupSection
         return $this->schema;
     }
 
+    /** @param bool $render Deprecated. */
     public function outerColumns(int $outerColumns, bool $render = false): self|Component
     {
         $this->outerColumns = $outerColumns;
@@ -78,6 +92,7 @@ class GroupSection
         return $this->outerColumns;
     }
 
+    /** @param bool $render Deprecated. */
     public function innerColumns(int $innerColumns, bool $render = false): self|Component
     {
         $this->innerColumns = $innerColumns;
@@ -94,6 +109,7 @@ class GroupSection
         return $this->innerColumns;
     }
 
+    /** @param bool $render Deprecated. */
     public function outerColumnSpan(int $outerColumnSpan, bool $render = false): self|Component
     {
         $this->outerColumnSpan = $outerColumnSpan;
@@ -110,6 +126,7 @@ class GroupSection
         return $this->outerColumnSpan;
     }
 
+    /** @param bool $render Deprecated. */
     public function innerColumnSpan(int $innerColumnSpan, bool $render = false): self|Component
     {
         $this->innerColumnSpan = $innerColumnSpan;
@@ -126,6 +143,7 @@ class GroupSection
         return $this->innerColumnSpan;
     }
 
+    /** @param bool $render Deprecated. */
     public function collapsible(bool $collapsible = true, bool $render = false): self|Component
     {
         $this->collapsable = $collapsible;
@@ -142,6 +160,7 @@ class GroupSection
         return $this->collapsable;
     }
 
+    /** @param bool $render Deprecated. */
     public function sectionHeading(string $sectionHeading = "", bool $render = false): self|Component
     {
         $this->sectionHeading = $sectionHeading;
@@ -158,6 +177,7 @@ class GroupSection
         return $this->sectionHeading;
     }
 
+    /** @param bool $render Deprecated. */
     public function defaultCollapsed(bool $collapsed = true, bool $render = false): self|Component
     {
         $this->defaultCollapsed = $collapsed;

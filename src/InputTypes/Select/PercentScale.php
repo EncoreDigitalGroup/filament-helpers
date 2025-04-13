@@ -15,7 +15,7 @@ use Filament\Forms\Components\Select;
  */
 class PercentScale
 {
-    public static function make(string $field, ?string $label = null): \Filament\Forms\Components\Select
+    public static function make(string $field, ?string $label = null): Select
     {
         return Select::make($field)
             ->options([
