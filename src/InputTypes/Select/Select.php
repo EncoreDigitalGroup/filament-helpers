@@ -1,7 +1,7 @@
 <?php
 
 /*
- * Copyright (c) 2023-2024. Encore Digital Group.
+ * Copyright (c) 2023-2025. Encore Digital Group.
  * All Rights Reserved.
  */
 

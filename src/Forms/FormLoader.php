@@ -1,5 +1,10 @@
 <?php
 
+/*
+ * Copyright (c) 2025. Encore Digital Group.
+ * All Rights Reserved.
+ */
+
 namespace EncoreDigitalGroup\Filament\Helpers\Forms;
 
 use Filament\Forms\Form;
@@ -8,11 +13,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class FormLoader
 {
-    protected Page $context;
-    protected Model $model;
-    protected string $method;
-    protected string $statePath = "data";
-
     public static function make(Page $context, Model $model, ?string $method, ?string $statePath = "data"): array
     {
         return [

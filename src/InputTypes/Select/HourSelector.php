@@ -1,8 +1,8 @@
 <?php
 
 /*
- * Copyright (c) 2024. Encore Digital Group.
- * All Right Reserved.
+ * Copyright (c) 2024-2025. Encore Digital Group.
+ * All Rights Reserved.
  */
 
 namespace EncoreDigitalGroup\Filament\Helpers\InputTypes\Select;
@@ -10,9 +10,6 @@ namespace EncoreDigitalGroup\Filament\Helpers\InputTypes\Select;
 use EncoreDigitalGroup\Filament\Helpers\Support\InputMasking;
 use Filament\Forms\Components\Select;
 
-/**
- * @api
- */
 class HourSelector
 {
     public static function make(string $field, ?string $label = null): Select
