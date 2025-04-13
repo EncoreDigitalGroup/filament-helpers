@@ -28,12 +28,12 @@ class GroupSection
     }
 
     /**
-     * @param array $schema Form schema.
-     * @param int $outerColumns Deprecated, use GroupSection::fluent() instead.
-     * @param int $innerColumns Deprecated, use GroupSection::fluent() instead.
-     * @param int $outerColumnSpan Deprecated, use GroupSection::fluent() instead.
-     * @param int $innerColumnSpan Deprecated, use GroupSection::fluent() instead.
-     * @param bool $fluent Deprecated, use GroupSection::fluent() instead.
+     * @param  array  $schema  Form schema.
+     * @param  int  $outerColumns  Deprecated, use GroupSection::fluent() instead.
+     * @param  int  $innerColumns  Deprecated, use GroupSection::fluent() instead.
+     * @param  int  $outerColumnSpan  Deprecated, use GroupSection::fluent() instead.
+     * @param  int  $innerColumnSpan  Deprecated, use GroupSection::fluent() instead.
+     * @param  bool  $fluent  Deprecated, use GroupSection::fluent() instead.
      */
     public static function make(array $schema, int $outerColumns = 2, int $innerColumns = 2, int $outerColumnSpan = 2, int $innerColumnSpan = 2, bool $fluent = false): self|Component
     {
