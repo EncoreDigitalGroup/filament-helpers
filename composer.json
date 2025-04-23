@@ -5,7 +5,15 @@
     "license": "BSD-3-Clause",
     "require": {
         "filament/filament": "^3.2.115",
-        "illuminate/support": "^11|^12"
+        "illuminate/support": "^11|^12",
+        "phpgenesis/common": "^0.3",
+        "encoredigitalgroup/stdlib": "^2.0"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^2.0",
+        "rector/rector": "^2.0",
+        "tightenco/duster": "^2.7 || ^3.0",
+        "phpgenesis/devutilities": "^0.3"
     },
     "autoload": {
         "psr-4": {
@@ -24,11 +32,5 @@
                 "EncoreDigitalGroup\\Filament\\Helpers\\Providers\\FilamentHelperServiceProvider"
             ]
         }
-    },
-    "require-dev": {
-        "phpstan/phpstan": "^1.11",
-        "rector/rector": "^1.1",
-        "tightenco/duster": "^2.7 || ^3.0",
-        "phpgenesis/devutilities": "^0.2.57"
     }
 }
