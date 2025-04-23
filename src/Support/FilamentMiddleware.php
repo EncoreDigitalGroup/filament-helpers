@@ -1,4 +1,5 @@
 <?php
+
 /*
  * Copyright (c) 2025. Encore Digital Group.
  * All Rights Reserved.
@@ -13,13 +14,12 @@ use InvalidArgumentException;
 class FilamentMiddleware
 {
     private static self $instance;
-
     private Collection $middleware;
 
     public static function make(): self
     {
         if (!isset(self::$instance)) {
-            self::$instance = new self();
+            self::$instance = new self;
             self::$instance->middleware = new Collection;
         }
 
