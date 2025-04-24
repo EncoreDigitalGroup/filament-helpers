@@ -7,7 +7,6 @@
 
 namespace EncoreDigitalGroup\Filament\Helpers\Support;
 
-use EncoreDigitalGroup\StdLib\Objects\Support\Types\Arr;
 use Illuminate\Support\Collection;
 use InvalidArgumentException;
 
@@ -33,7 +32,7 @@ class FilamentMiddleware
                 throw new InvalidArgumentException("Middleware '{$middleware}' is not a valid class");
             }
 
-            $middleware = Arr::wrap($middleware);
+            $this->middleware->add($middleware);
         } else {
             foreach ($middleware as $class) {
                 if (!is_string($class)) {
@@ -43,10 +42,11 @@ class FilamentMiddleware
                 if (!class_exists($class)) {
                     throw new InvalidArgumentException("Middleware '{$class}' is not a valid class");
                 }
+
+                $this->middleware->add($class);
             }
         }
 
-        $this->middleware->add($middleware);
     }
 
     public function get(): array
