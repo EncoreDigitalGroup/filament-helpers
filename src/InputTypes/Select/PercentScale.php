@@ -7,13 +7,19 @@
 
 namespace EncoreDigitalGroup\Filament\Helpers\InputTypes\Select;
 
+use BackedEnum;
 use EncoreDigitalGroup\Filament\Helpers\Support\InputMasking;
+use EncoreDigitalGroup\StdLib\Objects\Enum;
 use Filament\Forms\Components\Select;
 
 class PercentScale
 {
-    public static function make(string $field, ?string $label = null): Select
+    public static function make(BackedEnum|string $field, ?string $label = null): Select
     {
+        if ($field instanceof BackedEnum) {
+            $field = Enum::string($field);
+        }
+
         return Select::make($field)
             ->options([
                 "0.00" => "No Change",

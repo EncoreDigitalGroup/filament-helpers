@@ -7,14 +7,20 @@
 
 namespace EncoreDigitalGroup\Filament\Helpers\InputTypes\DateTime;
 
+use BackedEnum;
 use Closure;
 use EncoreDigitalGroup\Filament\Helpers\Support\InputMasking;
+use EncoreDigitalGroup\StdLib\Objects\Enum;
 use Filament\Forms\Components\DateTimePicker as BaseDateTimePicker;
 
 class DateTimePicker
 {
-    public static function make(string $field, bool|Closure $required = true): BaseDateTimePicker
+    public static function make(BackedEnum|string $field, bool|Closure $required = true): BaseDateTimePicker
     {
+        if ($field instanceof BackedEnum) {
+            $field = Enum::string($field);
+        }
+
         return BaseDateTimePicker::make($field)
             ->required($required)
             ->columnSpan(2)
