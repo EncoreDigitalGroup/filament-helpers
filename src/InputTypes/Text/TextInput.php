@@ -7,13 +7,19 @@
 
 namespace EncoreDigitalGroup\Filament\Helpers\InputTypes\Text;
 
+use BackedEnum;
 use EncoreDigitalGroup\Filament\Helpers\Support\InputMasking;
+use EncoreDigitalGroup\StdLib\Objects\Enum;
 use Filament\Forms\Components\TextInput as TextInputBase;
 
 class TextInput
 {
-    public static function make(string $field, string $label): TextInputBase
+    public static function make(BackedEnum|string $field, string $label): TextInputBase
     {
+        if ($field instanceof BackedEnum) {
+            $field = Enum::string($field);
+        }
+
         return TextInputBase::make($field)
             ->label($label)
             ->validationAttribute($label)

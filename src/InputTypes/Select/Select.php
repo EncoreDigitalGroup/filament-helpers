@@ -7,15 +7,21 @@
 
 namespace EncoreDigitalGroup\Filament\Helpers\InputTypes\Select;
 
+use BackedEnum;
 use Closure;
 use EncoreDigitalGroup\Filament\Helpers\Support\InputMasking;
+use EncoreDigitalGroup\StdLib\Objects\Enum;
 use Filament\Forms\Components\Select as BaseSelect;
 use Illuminate\Contracts\Support\Htmlable;
 
 class Select
 {
-    public static function make(string $fieldName, string|Htmlable|Closure|null $label): BaseSelect
+    public static function make(BackedEnum|string $fieldName, string|Htmlable|Closure|null $label): BaseSelect
     {
+        if ($fieldName instanceof BackedEnum) {
+            $fieldName = Enum::string($fieldName);
+        }
+
         return BaseSelect::make($fieldName)
             ->label($label)
             ->native(false)

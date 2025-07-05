@@ -7,12 +7,18 @@
 
 namespace EncoreDigitalGroup\Filament\Helpers\InputTypes\Text;
 
+use BackedEnum;
+use EncoreDigitalGroup\StdLib\Objects\Enum;
 use Filament\Forms\Components\TextInput as TextInputBase;
 
 class MoneyInput
 {
-    public static function make(string $fieldName, string $label): TextInputBase
+    public static function make(BackedEnum|string $fieldName, string $label): TextInputBase
     {
+        if ($fieldName instanceof BackedEnum) {
+            $fieldName = Enum::string($fieldName);
+        }
+
         return TextInput::make($fieldName, $label)
             ->numeric()
             ->prefix("$")
