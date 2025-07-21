@@ -13,6 +13,11 @@ To install the Filament Helpers package, you can use Composer:
 composer require encoredigitalgroup/filament-helpers
 ```
 
+### Preparing for Filament v4
+
+Filament v4 support will be added to this package shortly after Filament v4 has reached it's first stable release. Preliminary Filament v4 support may be added
+in a feature branch prior to the first stable release of Filament v4. Usage of this feature branch in production code is discouraged.
+
 ### Upgrading to v2
 
 The only change between v1 and v2 is a slight namespace change. v1 used `EncoreDigitalGroup\FilamentHelpers`. v2 now uses `EncoreDigitalGroup\Filament\Helpers`. This
