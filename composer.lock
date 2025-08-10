@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fe3e0f37e875a1564cd2e93f765c0e22",
+    "content-hash": "ed3615bdae65feeb6a9ec75f2e3a9070",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -2797,16 +2797,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v12.21.0",
+            "version": "v12.22.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "ac8c4e73bf1b5387b709f7736d41427e6af1c93b"
+                "reference": "d33ee45184126f32f593d4b809a846ed88a1dc43"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/ac8c4e73bf1b5387b709f7736d41427e6af1c93b",
-                "reference": "ac8c4e73bf1b5387b709f7736d41427e6af1c93b",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/d33ee45184126f32f593d4b809a846ed88a1dc43",
+                "reference": "d33ee45184126f32f593d4b809a846ed88a1dc43",
                 "shasum": ""
             },
             "require": {
@@ -3008,7 +3008,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2025-07-22T15:41:55+00:00"
+            "time": "2025-08-08T13:58:03+00:00"
         },
         {
             "name": "laravel/prompts",
@@ -4260,29 +4260,29 @@
         },
         {
             "name": "nette/utils",
-            "version": "v4.0.7",
+            "version": "v4.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/utils.git",
-                "reference": "e67c4061eb40b9c113b218214e42cb5a0dda28f2"
+                "reference": "c930ca4e3cf4f17dcfb03037703679d2396d2ede"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/utils/zipball/e67c4061eb40b9c113b218214e42cb5a0dda28f2",
-                "reference": "e67c4061eb40b9c113b218214e42cb5a0dda28f2",
+                "url": "https://api.github.com/repos/nette/utils/zipball/c930ca4e3cf4f17dcfb03037703679d2396d2ede",
+                "reference": "c930ca4e3cf4f17dcfb03037703679d2396d2ede",
                 "shasum": ""
             },
             "require": {
-                "php": "8.0 - 8.4"
+                "php": "8.0 - 8.5"
             },
             "conflict": {
                 "nette/finder": "<3",
                 "nette/schema": "<1.2.2"
             },
             "require-dev": {
-                "jetbrains/phpstorm-attributes": "dev-master",
+                "jetbrains/phpstorm-attributes": "^1.2",
                 "nette/tester": "^2.5",
-                "phpstan/phpstan": "^1.0",
+                "phpstan/phpstan-nette": "^2.0@stable",
                 "tracy/tracy": "^2.9"
             },
             "suggest": {
@@ -4300,6 +4300,9 @@
                 }
             },
             "autoload": {
+                "psr-4": {
+                    "Nette\\": "src"
+                },
                 "classmap": [
                     "src/"
                 ]
@@ -4340,9 +4343,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nette/utils/issues",
-                "source": "https://github.com/nette/utils/tree/v4.0.7"
+                "source": "https://github.com/nette/utils/tree/v4.0.8"
             },
-            "time": "2025-06-03T04:55:08+00:00"
+            "time": "2025-08-06T21:43:34+00:00"
         },
         {
             "name": "nunomaduro/termwind",
@@ -4526,16 +4529,16 @@
         },
         {
             "name": "phpgenesis/common",
-            "version": "v0.3.16",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPGenesis/Common.git",
-                "reference": "eb67c879a4bb4aa8e0c6dd619f1d2d5ddb86843f"
+                "reference": "c75f4a0bbf549250edeca3d6573d4f4e00213454"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPGenesis/Common/zipball/eb67c879a4bb4aa8e0c6dd619f1d2d5ddb86843f",
-                "reference": "eb67c879a4bb4aa8e0c6dd619f1d2d5ddb86843f",
+                "url": "https://api.github.com/repos/PHPGenesis/Common/zipball/c75f4a0bbf549250edeca3d6573d4f4e00213454",
+                "reference": "c75f4a0bbf549250edeca3d6573d4f4e00213454",
                 "shasum": ""
             },
             "require": {
@@ -4553,7 +4556,6 @@
             "type": "library",
             "autoload": {
                 "files": [
-                    "src/Helpers/helpers.php",
                     "phpgenesis_helpers.php"
                 ],
                 "psr-4": {
@@ -4566,9 +4568,9 @@
             ],
             "description": "Shared Functionality for PHPGenesis",
             "support": {
-                "source": "https://github.com/PHPGenesis/Common/tree/v0.3.16"
+                "source": "https://github.com/PHPGenesis/Common/tree/v1.0.0"
             },
-            "time": "2025-07-04T22:21:37+00:00"
+            "time": "2025-08-10T00:50:20+00:00"
         },
         {
             "name": "phpoption/phpoption",
@@ -9006,16 +9008,16 @@
     "packages-dev": [
         {
             "name": "phpgenesis/devutilities",
-            "version": "v0.3.16",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPGenesis/DevUtilities.git",
-                "reference": "4e247a8dd09b2d61d6e9e973e921a87af7615523"
+                "reference": "3aadb2685e57b3f6278b5dfde16381fbad2eb106"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPGenesis/DevUtilities/zipball/4e247a8dd09b2d61d6e9e973e921a87af7615523",
-                "reference": "4e247a8dd09b2d61d6e9e973e921a87af7615523",
+                "url": "https://api.github.com/repos/PHPGenesis/DevUtilities/zipball/3aadb2685e57b3f6278b5dfde16381fbad2eb106",
+                "reference": "3aadb2685e57b3f6278b5dfde16381fbad2eb106",
                 "shasum": ""
             },
             "require": {
@@ -9039,9 +9041,9 @@
                 "dev"
             ],
             "support": {
-                "source": "https://github.com/PHPGenesis/DevUtilities/tree/v0.3.16"
+                "source": "https://github.com/PHPGenesis/DevUtilities/tree/v1.0.0"
             },
-            "time": "2025-06-27T21:00:18+00:00"
+            "time": "2025-08-10T00:50:19+00:00"
         },
         {
             "name": "phpstan/phpstan",
