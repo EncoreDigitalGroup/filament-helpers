@@ -7,8 +7,8 @@
 
 namespace EncoreDigitalGroup\Filament\Helpers\Forms;
 
-use Filament\Forms\Form;
 use Filament\Resources\Pages\Page;
+use Filament\Schemas\Schema;
 use Illuminate\Database\Eloquent\Model;
 
 class FormLoader
@@ -16,8 +16,8 @@ class FormLoader
     public static function make(Page $context, Model $model, ?string $method, ?string $statePath = "data"): array
     {
         return [
-            "form" => $context->form($context::getResource()::$method(
-                Form::make($context)
+            "form" => $context::getResource()::form($context::getResource()::$method(
+                Schema::make($context)
                     ->operation("edit")
                     ->model($model)
                     ->statePath($statePath)

@@ -4,7 +4,7 @@
     "type": "library",
     "license": "BSD-3-Clause",
     "require": {
-        "filament/filament": "^3.3.33",
+        "filament/filament": "^4.0.0-beta24",
         "illuminate/support": "^11|^12",
         "phpgenesis/common": "^1.0",
         "encoredigitalgroup/stdlib": "^2.0",
@@ -14,7 +14,8 @@
         "phpstan/phpstan": "^2.0",
         "rector/rector": "^2.0",
         "tightenco/duster": "^2.7 || ^3.0",
-        "phpgenesis/devutilities": "^1.0"
+        "phpgenesis/devutilities": "^1.0",
+        "filament/upgrade": "^4.0"
     },
     "autoload": {
         "psr-4": {
@@ -26,7 +27,7 @@
             "PHPGenesis\\Common\\Composer\\Scripts::postAutoloadDump"
         ]
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "beta",
     "extra": {
         "laravel": {
             "providers": [

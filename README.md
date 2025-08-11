@@ -15,14 +15,14 @@ composer require encoredigitalgroup/filament-helpers
 
 ### Preparing for Filament v4
 
-Filament v4 support will be added to this package shortly after Filament v4 has reached it's first stable release. Preliminary Filament v4 support may be added
-in a feature branch prior to the first stable release of Filament v4. Usage of this feature branch in production code is discouraged.
+Preliminary Filament v4 support has been added to this package on the main branch. You can opt-in to using v4 by setting the package version to `^4.0.0-rc1`.
+Usage of release candidates in production code is discouraged.
 
-### Upgrading to v2
+### Upgrading to v4
 
-The only change between v1 and v2 is a slight namespace change. v1 used `EncoreDigitalGroup\FilamentHelpers`. v2 now uses `EncoreDigitalGroup\Filament\Helpers`. This
-change was made to make this package consistent with other packages Encore Digital Group has. A simple find and replace will work for this upgrade as there are no other
-changes, breaking or otherwise, in this release.
+- Return types have been updated to use the new `Filament\Schemas` namespace.
+- Class parameters named `$fieldName` have been renamed to `$field` for consistency with the rest of the package. If you are not using named parameters
+  in your code, then there is nothing for you to do.
 
 ### Upgrading to v3
 
@@ -39,6 +39,12 @@ The `EncoreDigitalGroup\Filament\Helpers\Forms\GroupSection` class had the follo
 - The `fluent()` method has been added:
     - As the name suggests, this method does not automatically render the component. You can make your adjustments using the
       provided methods. Once you are finished making adjustments, you can call `render()` to render the component.
+
+### Upgrading to v2
+
+The only change between v1 and v2 is a slight namespace change. v1 used `EncoreDigitalGroup\FilamentHelpers`. v2 now uses `EncoreDigitalGroup\Filament\Helpers`. This
+change was made to make this package consistent with other packages Encore Digital Group has. A simple find and replace will work for this upgrade as there are no other
+changes, breaking or otherwise, in this release.
 
 ### Usage
 
