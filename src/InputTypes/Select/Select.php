@@ -16,13 +16,13 @@ use Illuminate\Contracts\Support\Htmlable;
 
 class Select
 {
-    public static function make(BackedEnum|string $fieldName, string|Htmlable|Closure|null $label): BaseSelect
+    public static function make(BackedEnum|string $field, string|Htmlable|Closure|null $label): BaseSelect
     {
-        if ($fieldName instanceof BackedEnum) {
-            $fieldName = Enum::string($fieldName);
+        if ($field instanceof BackedEnum) {
+            $field = Enum::string($field);
         }
 
-        return BaseSelect::make($fieldName)
+        return BaseSelect::make($field)
             ->label($label)
             ->native(false)
             ->extraAttributes(["class" => InputMasking::get()], true);

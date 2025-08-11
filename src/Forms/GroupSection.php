@@ -49,9 +49,9 @@ class GroupSection
         return $this->schema;
     }
 
-    public function outerColumns(int $outerColumns): self
+    public function outerColumns(int $count): self
     {
-        $this->outerColumns = $outerColumns;
+        $this->outerColumns = $count;
 
         return $this;
     }
@@ -61,9 +61,9 @@ class GroupSection
         return $this->outerColumns;
     }
 
-    public function innerColumns(int $innerColumns): self
+    public function innerColumns(int $count): self
     {
-        $this->innerColumns = $innerColumns;
+        $this->innerColumns = $count;
 
         return $this;
     }
@@ -73,9 +73,9 @@ class GroupSection
         return $this->innerColumns;
     }
 
-    public function outerColumnSpan(int $outerColumnSpan): self
+    public function outerColumnSpan(int $count): self
     {
-        $this->outerColumnSpan = $outerColumnSpan;
+        $this->outerColumnSpan = $count;
 
         return $this;
     }
@@ -85,9 +85,9 @@ class GroupSection
         return $this->outerColumnSpan;
     }
 
-    public function innerColumnSpan(int $innerColumnSpan): self
+    public function innerColumnSpan(int $count): self
     {
-        $this->innerColumnSpan = $innerColumnSpan;
+        $this->innerColumnSpan = $count;
 
         return $this;
     }
@@ -109,9 +109,9 @@ class GroupSection
         return $this->collapsable;
     }
 
-    public function sectionHeading(string $sectionHeading = ""): self
+    public function sectionHeading(string $heading = ""): self
     {
-        $this->sectionHeading = $sectionHeading;
+        $this->sectionHeading = $heading;
 
         return $this;
     }
