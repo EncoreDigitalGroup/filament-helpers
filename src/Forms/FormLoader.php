@@ -7,8 +7,8 @@
 
 namespace EncoreDigitalGroup\Filament\Helpers\Forms;
 
-use Filament\Schemas\Schema;
 use Filament\Resources\Pages\Page;
+use Filament\Schemas\Schema;
 use Illuminate\Database\Eloquent\Model;
 
 class FormLoader
