@@ -13,13 +13,13 @@ use Filament\Forms\Components\TextInput as TextInputBase;
 
 class MoneyInput
 {
-    public static function make(BackedEnum|string $fieldName, string $label): TextInputBase
+    public static function make(BackedEnum|string $field, string $label): TextInputBase
     {
-        if ($fieldName instanceof BackedEnum) {
-            $fieldName = Enum::string($fieldName);
+        if ($field instanceof BackedEnum) {
+            $field = Enum::string($field);
         }
 
-        return TextInput::make($fieldName, $label)
+        return TextInput::make($field, $label)
             ->numeric()
             ->prefix("$")
             ->step(0.01)
