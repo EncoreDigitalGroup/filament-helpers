@@ -4750,16 +4750,16 @@
         },
         {
             "name": "phpgenesis/common",
-            "version": "v1.1.0",
+            "version": "v1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPGenesis/Common.git",
-                "reference": "c75f4a0bbf549250edeca3d6573d4f4e00213454"
+                "reference": "1c1047e1158171f2da9ada9550077555aca6db32"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPGenesis/Common/zipball/c75f4a0bbf549250edeca3d6573d4f4e00213454",
-                "reference": "c75f4a0bbf549250edeca3d6573d4f4e00213454",
+                "url": "https://api.github.com/repos/PHPGenesis/Common/zipball/1c1047e1158171f2da9ada9550077555aca6db32",
+                "reference": "1c1047e1158171f2da9ada9550077555aca6db32",
                 "shasum": ""
             },
             "require": {
@@ -4789,9 +4789,9 @@
             ],
             "description": "Shared Functionality for PHPGenesis",
             "support": {
-                "source": "https://github.com/PHPGenesis/Common/tree/v1.1.0"
+                "source": "https://github.com/PHPGenesis/Common/tree/v1.2.1"
             },
-            "time": "2025-08-10T00:50:20+00:00"
+            "time": "2025-09-07T18:55:19+00:00"
         },
         {
             "name": "phpoption/phpoption",
@@ -9708,16 +9708,16 @@
         },
         {
             "name": "phpgenesis/devutilities",
-            "version": "v1.1.0",
+            "version": "v1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPGenesis/DevUtilities.git",
-                "reference": "3aadb2685e57b3f6278b5dfde16381fbad2eb106"
+                "reference": "c1cabd713a359ff385f1dfee0a6167a5142c788f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPGenesis/DevUtilities/zipball/3aadb2685e57b3f6278b5dfde16381fbad2eb106",
-                "reference": "3aadb2685e57b3f6278b5dfde16381fbad2eb106",
+                "url": "https://api.github.com/repos/PHPGenesis/DevUtilities/zipball/c1cabd713a359ff385f1dfee0a6167a5142c788f",
+                "reference": "c1cabd713a359ff385f1dfee0a6167a5142c788f",
                 "shasum": ""
             },
             "require": {
@@ -9741,9 +9741,9 @@
                 "dev"
             ],
             "support": {
-                "source": "https://github.com/PHPGenesis/DevUtilities/tree/v1.1.0"
+                "source": "https://github.com/PHPGenesis/DevUtilities/tree/v1.2.1"
             },
-            "time": "2025-08-10T00:50:19+00:00"
+            "time": "2025-09-08T03:29:36+00:00"
         },
         {
             "name": "phpstan/phpstan",
