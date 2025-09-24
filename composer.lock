@@ -4824,7 +4824,7 @@
         },
         {
             "name": "phpgenesis/common",
-            "version": "v1.4.0",
+            "version": "v1.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPGenesis/Common.git",
@@ -4863,7 +4863,7 @@
             ],
             "description": "Shared Functionality for PHPGenesis",
             "support": {
-                "source": "https://github.com/PHPGenesis/Common/tree/v1.4.0"
+                "source": "https://github.com/PHPGenesis/Common/tree/v1.5.1"
             },
             "time": "2025-09-07T18:55:19+00:00"
         },
@@ -9782,7 +9782,7 @@
         },
         {
             "name": "phpgenesis/devutilities",
-            "version": "v1.4.0",
+            "version": "v1.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPGenesis/DevUtilities.git",
@@ -9815,7 +9815,7 @@
                 "dev"
             ],
             "support": {
-                "source": "https://github.com/PHPGenesis/DevUtilities/tree/v1.4.0"
+                "source": "https://github.com/PHPGenesis/DevUtilities/tree/v1.5.1"
             },
             "time": "2025-09-12T14:41:00+00:00"
         },
