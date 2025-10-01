@@ -1613,16 +1613,16 @@
         },
         {
             "name": "encoredigitalgroup/stdlib",
-            "version": "v2.13.0",
+            "version": "v2.14.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/EncoreDigitalGroup/stdlib.git",
-                "reference": "7b826f4a752e60cdcf21ae56fab43dd819193831"
+                "reference": "5f7382809a1897341fd5957f5d2b735026e141a6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/EncoreDigitalGroup/stdlib/zipball/7b826f4a752e60cdcf21ae56fab43dd819193831",
-                "reference": "7b826f4a752e60cdcf21ae56fab43dd819193831",
+                "url": "https://api.github.com/repos/EncoreDigitalGroup/stdlib/zipball/5f7382809a1897341fd5957f5d2b735026e141a6",
+                "reference": "5f7382809a1897341fd5957f5d2b735026e141a6",
                 "shasum": ""
             },
             "require": {
@@ -1665,9 +1665,9 @@
             "description": "A collection of standard library classes and functions for PHP.",
             "support": {
                 "issues": "https://github.com/EncoreDigitalGroup/stdlib/issues",
-                "source": "https://github.com/EncoreDigitalGroup/stdlib/tree/v2.13.0"
+                "source": "https://github.com/EncoreDigitalGroup/stdlib/tree/v2.14.3"
             },
-            "time": "2025-09-24T02:02:59+00:00"
+            "time": "2025-10-01T15:13:57+00:00"
         },
         {
             "name": "filament/actions",
