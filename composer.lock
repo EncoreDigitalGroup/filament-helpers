@@ -9666,7 +9666,7 @@
     "packages-dev": [
         {
             "name": "filament/upgrade",
-            "version": "v4.1.0",
+            "version": "v4.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/upgrade.git",
