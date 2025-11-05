@@ -4754,7 +4754,7 @@
         },
         {
             "name": "phpgenesis/common",
-            "version": "v1.6.0",
+            "version": "v1.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPGenesis/Common.git",
@@ -4793,7 +4793,7 @@
             ],
             "description": "Shared Functionality for PHPGenesis",
             "support": {
-                "source": "https://github.com/PHPGenesis/Common/tree/v1.6.0"
+                "source": "https://github.com/PHPGenesis/Common/tree/v1.6.1"
             },
             "time": "2025-10-26T16:19:08+00:00"
         },
@@ -9667,16 +9667,16 @@
         },
         {
             "name": "phpgenesis/devutilities",
-            "version": "v1.6.0",
+            "version": "v1.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPGenesis/DevUtilities.git",
-                "reference": "82b5513213cdd458b755a9c4e6452c0a0547b480"
+                "reference": "17c9d1307ea808930b71113af027f48d0809aa14"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPGenesis/DevUtilities/zipball/82b5513213cdd458b755a9c4e6452c0a0547b480",
-                "reference": "82b5513213cdd458b755a9c4e6452c0a0547b480",
+                "url": "https://api.github.com/repos/PHPGenesis/DevUtilities/zipball/17c9d1307ea808930b71113af027f48d0809aa14",
+                "reference": "17c9d1307ea808930b71113af027f48d0809aa14",
                 "shasum": ""
             },
             "require": {
@@ -9700,9 +9700,9 @@
                 "dev"
             ],
             "support": {
-                "source": "https://github.com/PHPGenesis/DevUtilities/tree/v1.6.0"
+                "source": "https://github.com/PHPGenesis/DevUtilities/tree/v1.6.1"
             },
-            "time": "2025-10-26T16:19:15+00:00"
+            "time": "2025-10-30T00:41:17+00:00"
         },
         {
             "name": "phpstan/phpstan",
