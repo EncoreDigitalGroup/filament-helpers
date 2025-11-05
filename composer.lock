@@ -6266,16 +6266,16 @@
         },
         {
             "name": "symfony/console",
-            "version": "v7.4.0-BETA1",
+            "version": "v7.4.0-BETA2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "c3da86291d89157fe2a9ba2401c4acf1a7c93eba"
+                "reference": "0bb20e5f98f5e476b1ce151899bb15cccf8b28bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/c3da86291d89157fe2a9ba2401c4acf1a7c93eba",
-                "reference": "c3da86291d89157fe2a9ba2401c4acf1a7c93eba",
+                "url": "https://api.github.com/repos/symfony/console/zipball/0bb20e5f98f5e476b1ce151899bb15cccf8b28bf",
+                "reference": "0bb20e5f98f5e476b1ce151899bb15cccf8b28bf",
                 "shasum": ""
             },
             "require": {
@@ -6340,7 +6340,7 @@
                 "terminal"
             ],
             "support": {
-                "source": "https://github.com/symfony/console/tree/v7.4.0-BETA1"
+                "source": "https://github.com/symfony/console/tree/v7.4.0-BETA2"
             },
             "funding": [
                 {
@@ -6360,7 +6360,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-10-15T08:15:57+00:00"
+            "time": "2025-10-27T14:00:43+00:00"
         },
         {
             "name": "symfony/css-selector",
@@ -9675,7 +9675,7 @@
     "packages-dev": [
         {
             "name": "filament/upgrade",
-            "version": "v4.1.10",
+            "version": "v4.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/upgrade.git",
