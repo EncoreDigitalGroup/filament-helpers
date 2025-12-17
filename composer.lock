@@ -4768,16 +4768,16 @@
         },
         {
             "name": "phpgenesis/common",
-            "version": "v1.6.1",
+            "version": "v1.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPGenesis/Common.git",
-                "reference": "32bffc876f383796d7685090694b67e7b24b43e8"
+                "reference": "617ed26be587c6c4013ec46f0fb7b494b3eed22e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPGenesis/Common/zipball/32bffc876f383796d7685090694b67e7b24b43e8",
-                "reference": "32bffc876f383796d7685090694b67e7b24b43e8",
+                "url": "https://api.github.com/repos/PHPGenesis/Common/zipball/617ed26be587c6c4013ec46f0fb7b494b3eed22e",
+                "reference": "617ed26be587c6c4013ec46f0fb7b494b3eed22e",
                 "shasum": ""
             },
             "require": {
@@ -4787,7 +4787,7 @@
                 "illuminate/collections": "^10|^11|^12",
                 "illuminate/database": "^10|^11|^12",
                 "illuminate/support": "^10|^11|^12",
-                "php": "^8.3"
+                "php": "^8.3|^8.4|^8.5"
             },
             "require-dev": {
                 "laravel/framework": "^10|^11|^12"
@@ -4807,9 +4807,9 @@
             ],
             "description": "Shared Functionality for PHPGenesis",
             "support": {
-                "source": "https://github.com/PHPGenesis/Common/tree/v1.6.1"
+                "source": "https://github.com/PHPGenesis/Common/tree/v1.9.1"
             },
-            "time": "2025-10-26T16:19:08+00:00"
+            "time": "2025-12-11T03:43:53+00:00"
         },
         {
             "name": "phpoption/phpoption",
@@ -9682,21 +9682,21 @@
         },
         {
             "name": "phpgenesis/devutilities",
-            "version": "v1.6.1",
+            "version": "v1.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPGenesis/DevUtilities.git",
-                "reference": "17c9d1307ea808930b71113af027f48d0809aa14"
+                "reference": "12e7590bc6eabe12c915601e6cbcb82f2a90a6c5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPGenesis/DevUtilities/zipball/17c9d1307ea808930b71113af027f48d0809aa14",
-                "reference": "17c9d1307ea808930b71113af027f48d0809aa14",
+                "url": "https://api.github.com/repos/PHPGenesis/DevUtilities/zipball/12e7590bc6eabe12c915601e6cbcb82f2a90a6c5",
+                "reference": "12e7590bc6eabe12c915601e6cbcb82f2a90a6c5",
                 "shasum": ""
             },
             "require": {
                 "encoredigitalgroup/stdlib": "^2.0",
-                "php": "^8.3",
+                "php": "^8.3|^8.4|^8.5",
                 "phpgenesis/common": "self.version",
                 "rector/rector": "^1|^2"
             },
@@ -9715,9 +9715,9 @@
                 "dev"
             ],
             "support": {
-                "source": "https://github.com/PHPGenesis/DevUtilities/tree/v1.6.1"
+                "source": "https://github.com/PHPGenesis/DevUtilities/tree/v1.9.1"
             },
-            "time": "2025-10-30T00:41:17+00:00"
+            "time": "2025-12-11T03:44:54+00:00"
         },
         {
             "name": "phpstan/phpstan",
