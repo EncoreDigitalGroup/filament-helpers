@@ -5,14 +5,19 @@ on:
         tags:
             - 'v[0-9]+.[0-9]+.[0-9]+'
             - '!v[0-9]+.[0-9]+.[0-9]+-rc[0-9]+'
-    workflow_dispatch:
+
+permissions: write-all
 
 jobs:
     CreateRelease:
         name: CreateRelease
-        uses: EncoreDigitalGroup/ci-workflows/.github/workflows/github_createRelease.yml@v2
-        with:
-            generateReleaseNotes: true
-            isDraft: false
-        secrets:
-            token: ${{ secrets.GITHUB_TOKEN }}
+        runs-on: ubuntu-latest
+        steps:
+            -   name: Create Release
+                uses: EncoreDigitalGroup/ci-workflows/actions/github/createRelease@v3
+                with:
+                    repository: ${{ github.repository }}
+                    tagName: ${{ github.ref_name }}
+                    generateReleaseNotes: true
+                    isDraft: false
+                    token: ${{ secrets.GITHUB_TOKEN }}

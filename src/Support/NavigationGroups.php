@@ -1,13 +1,15 @@
 <?php
 
 /*
- * Copyright (c) 2025. Encore Digital Group.
+ * Copyright (c) 2025-2026. Encore Digital Group.
  * All Rights Reserved.
  */
 
 namespace EncoreDigitalGroup\Filament\Helpers\Support;
 
-enum NavigationGroups: string
+use Filament\Support\Contracts\HasLabel;
+
+enum NavigationGroups: string implements HasLabel
 {
     case Banking = "Banking";
     case Calendar = "Calendar";
@@ -21,4 +23,9 @@ enum NavigationGroups: string
     case Service = "Service";
     case Settings = "Settings";
     case Tenants = "Tenant Management";
+
+    public function getLabel(): string
+    {
+        return $this->value;
+    }
 }
