@@ -1,9 +1,0 @@
-version: 2
-updates:
-    -   package-ecosystem: "composer"
-        directory: "/"
-        schedule:
-            interval: weekly
-            day: wednesday
-            time: "12:00"
-            timezone: America/Chicago
