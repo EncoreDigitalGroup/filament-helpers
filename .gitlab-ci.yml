@@ -1,0 +1,38 @@
+workflow:
+    auto_cancel:
+        on_new_commit: interruptible
+
+include:
+    -   project: internal/ci-pipelines
+        ref: main
+        file:
+            - /workflows/php/code-style.yml
+            - /workflows/php/static-analysis.yml
+            - /workflows/php/test.yml
+            - /workflows/gitlab/create-release.yml
+
+stages:
+    - quality
+    - release
+
+code_style:
+    stage: quality
+    extends: .php:code-style
+    interruptible: true
+    image:
+        name: "$PHP_CI_IMAGE"
+        pull_policy: always
+
+static_analysis:
+    stage: quality
+    extends: .php:static-analysis
+    interruptible: true
+    variables:
+        PHPSTAN_PATHS: "src/"
+    image:
+        name: "$PHP_CI_IMAGE"
+        pull_policy: always
+
+release:
+    stage: release
+    extends: .gitlab:create-release
