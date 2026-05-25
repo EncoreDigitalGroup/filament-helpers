@@ -4,11 +4,11 @@
     "type": "library",
     "license": "BSD-3-Clause",
     "require": {
-        "filament/filament": "~5.0",
-        "illuminate/support": "^11|^12",
+        "filament/filament": "^5",
+        "illuminate/support": "^11|^12|^13",
         "phpgenesis/common": "^1.0",
         "encoredigitalgroup/stdlib": "^2.0",
-        "livewire/livewire": "~4.0"
+        "livewire/livewire": "^4"
     },
     "require-dev": {
         "phpstan/phpstan": "^2.0",
